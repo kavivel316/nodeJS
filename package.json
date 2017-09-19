@@ -1,0 +1,11 @@
+{
+  "name": " whatsApp",
+  "dependencies": {
+    "body-parser": " ",
+    "express": "",
+    "express-session": "^1.15.5",
+    "mongodb": "",
+    "mongoose": "*",
+    "querystring": "^0.2.0"
+  }
+}

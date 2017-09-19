@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta content="UTF-8">
+  <title>live data example</title>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script type="text/javascript" src="aglr-app.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body ng-app="app" ng-controller="wAcontroller">
+	<div class="app-wrapper">
+		<h2>Welcome to WeChat</h2>
+		<div class="entry-bx">
+			<ui-view></ui-view>
+		</div>
+	</div>
+		<script type="text/ng-template" id="/login.html">
+			<div id="login">
+				<img class="logo" src="/urs-logo.png" title="Logo">
+				<form ng-submit ="authenticate()" class="v-form" name="login">
+					<input type="text" name="name" placeholder="Name/Number" required>
+					<span ng-show="login.name.$touched && login.name.$invalid">The name is required.</span>
+					<input type="text" name="" placeholder="Password">
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</script>
+</body>
+</html>
